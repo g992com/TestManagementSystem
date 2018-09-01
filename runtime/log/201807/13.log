@@ -1,0 +1,1135 @@
+---------------------------------------------------------------
+[ 2018-07-13T17:28:30+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [ËøêË°åÊó∂Èó¥Ôºö0.261275s][ÂêûÂêêÁéáÔºö3.83req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,564.10kb] [Êñá‰ª∂Âä†ËΩΩÔºö43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:32+08:00 ] 127.0.0.1 POST /index.php/index/Login/verifyLogin
+[ info ] 127.0.0.1/index.php/index/Login/verifyLogin [ËøêË°åÊó∂Èó¥Ôºö0.443094s][ÂêûÂêêÁéáÔºö2.26req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,645.45kb] [Êñá‰ª∂Âä†ËΩΩÔºö52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'verifyLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'fjk',
+  'userPwd' => 'Zmpr',
+)
+[ info ] [ RUN ] app\index\controller\Login->verifyLogin[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118492s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.080329s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_user` WHERE  `user_name` = 'fjk'  AND `status` <> 0 LIMIT 1 [ RunTime:0.080362s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:32+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [ËøêË°åÊó∂Èó¥Ôºö0.087374s][ÂêûÂêêÁéáÔºö11.45req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,585.31kb] [Êñá‰ª∂Âä†ËΩΩÔºö43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:32+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [ËøêË°åÊó∂Èó¥Ôºö0.052909s][ÂêûÂêêÁéáÔºö18.90req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,567.16kb] [Êñá‰ª∂Âä†ËΩΩÔºö43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:37+08:00 ] 127.0.0.1 GET /index.php/listtestcase/test_plan_management
+[ info ] 127.0.0.1/index.php/listtestcase/test_plan_management [ËøêË°åÊó∂Èó¥Ôºö0.163023s][ÂêûÂêêÁéáÔºö6.13req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,584.86kb] [Êñá‰ª∂Âä†ËΩΩÔºö43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'test_plan_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\TestPlanManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\TestPlanManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\test_plan_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:39+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.530799s][ÂêûÂêêÁéáÔºö1.88req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,641.66kb] [Êñá‰ª∂Âä†ËΩΩÔºö52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116145s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.079346s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.078805s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:39+08:00 ] 127.0.0.1 GET /index.php/listtestcase/test_plan_management
+[ info ] 127.0.0.1/index.php/listtestcase/test_plan_management [ËøêË°åÊó∂Èó¥Ôºö0.091417s][ÂêûÂêêÁéáÔºö10.94req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,584.86kb] [Êñá‰ª∂Âä†ËΩΩÔºö43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'test_plan_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\TestPlanManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\TestPlanManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\test_plan_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:40+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474119871
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474119871 [ËøêË°åÊó∂Èó¥Ôºö0.426109s][ÂêûÂêêÁéáÔºö2.35req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.67kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531474119871',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116961s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.080928s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.081080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.078539s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:41+08:00 ] 127.0.0.1 GET /index.php/listtestcase/test_plan_management/getTestPlanList?order=asc&offset=0&limit=20&_=1531474119909
+[ info ] 127.0.0.1/index.php/listtestcase/test_plan_management/getTestPlanList?order=asc&offset=0&limit=20&_=1531474119909 [ËøêË°åÊó∂Èó¥Ôºö1.254412s][ÂêûÂêêÁéáÔºö0.80req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,707.11kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'test_plan_management',
+    2 => 'getTestPlanList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/test_plan_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531474119909',
+)
+[ info ] [ RUN ] app\listtestcase\controller\TestPlanManagement->getTestPlanList[ D:\phpStudy\WWW\application\listtestcase\controller\TestPlanManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124244s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.080495s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.081758s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_test_plan` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.076391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.077520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 3 LIMIT 1 [ RunTime:0.077629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 3  AND `test_result` = 1 LIMIT 1 [ RunTime:0.076917s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 3  AND `test_result` = 2 LIMIT 1 [ RunTime:0.076874s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 2 LIMIT 1 [ RunTime:0.076802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 2  AND `test_result` = 1 LIMIT 1 [ RunTime:0.076929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 2  AND `test_result` = 2 LIMIT 1 [ RunTime:0.077253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 1 LIMIT 1 [ RunTime:0.077956s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 1  AND `test_result` = 1 LIMIT 1 [ RunTime:0.076294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 1  AND `test_result` = 2 LIMIT 1 [ RunTime:0.078330s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:42+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.152634s][ÂêûÂêêÁéáÔºö6.55req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:42+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.027835s][ÂêûÂêêÁéáÔºö35.93req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.53kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:42+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.336465s][ÂêûÂêêÁéáÔºö2.97req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,641.66kb] [Êñá‰ª∂Âä†ËΩΩÔºö52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117175s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.080594s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.084470s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:42+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474122476
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474122476 [ËøêË°åÊó∂Èó¥Ôºö0.412294s][ÂêûÂêêÁéáÔºö2.43req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.67kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531474122476',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120758s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.079952s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.080775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.076268s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:42+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.037010s][ÂêûÂêêÁéáÔºö27.02req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:28:43+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.029890s][ÂêûÂêêÁéáÔºö33.46req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.53kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:34:38+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.404933s][ÂêûÂêêÁéáÔºö2.47req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,799.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö54]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119080s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.082600s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.079714s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:34:39+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474478553
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531474478553 [ËøêË°åÊó∂Èó¥Ôºö0.415565s][ÂêûÂêêÁéáÔºö2.41req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.67kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531474478553',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120306s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.080183s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.082479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.076427s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:34:39+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.034211s][ÂêûÂêêÁéáÔºö29.23req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:34:39+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.032584s][ÂêûÂêêÁéáÔºö30.69req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.47kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:44:27+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.381836s][ÂêûÂêêÁéáÔºö2.62req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,800.23kb] [Êñá‰ª∂Âä†ËΩΩÔºö54]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119770s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.081285s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.079966s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:44:27+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475067405
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475067405 [ËøêË°åÊó∂Èó¥Ôºö0.422130s][ÂêûÂêêÁéáÔºö2.37req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.67kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531475067405',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119851s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.081019s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.080735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.077174s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:44:27+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.036074s][ÂêûÂêêÁéáÔºö27.72req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:44:28+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.029573s][ÂêûÂêêÁéáÔºö33.81req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.47kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:48:10+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.335884s][ÂêûÂêêÁéáÔºö2.98req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,641.69kb] [Êñá‰ª∂Âä†ËΩΩÔºö52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125832s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.080161s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.081406s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:48:10+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475290446
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475290446 [ËøêË°åÊó∂Èó¥Ôºö0.403950s][ÂêûÂêêÁéáÔºö2.48req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.45kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531475290446',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120595s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.082697s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.079672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.079611s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:48:11+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.032150s][ÂêûÂêêÁéáÔºö31.10req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:48:11+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.032991s][ÂêûÂêêÁéáÔºö30.31req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.47kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:49:12+08:00 ] 127.0.0.1 GET /index.php
+[ info ] 127.0.0.1/index.php [ËøêË°åÊó∂Èó¥Ôºö0.366589s][ÂêûÂêêÁéáÔºö2.73req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,611.23kb] [Êñá‰ª∂Âä†ËΩΩÔºö47]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 60 seconds exceeded[x⁄ÌTÎn£F~ôHﬁ¸hƒ%iÇRW≈8∆Éâ¡Ê2?vÉ=∆ó‘áÔHbßRﬂ†Hña.gæÛ]Ê&ôNí¸P|ˇÒ}rÖ’˛˜˚˚úÒ˛€ç{7˘„Ô?\'w7Ê¯r{7ôN_¨˘t:yæÈ˚~:˘ÌˇÁÚLûˇ⁄7!˚ˆŒbºXúltVáÆ“cS†Ã.â<´ü∞otëlÙ(iSCÂk[2íaJá˝YCrªå2RòZ˙®eXå2K=•FK˚D^bk4%í[„±«ù™ ç‰kMMC_•oéöõ}–iWGô+]Kç%ØπÁNÍŸ<ô˘ ØVöc√yñ-áπù™‚uÙEçı3CsÅ÷xã_æl5ÅÙã≈ÂÈåE9Ùîûy—¨Â
+Œû)Øyï]È‚•êp<CüŸSÖ4õ˜◊«KTô[µ|ÌT8gV‚ÑR‰ÿE‡=§ëæ£úOa˝Áÿõ3Àà§úBIi±w_:k◊∞7 m)⁄‚Ω∑ÚøŒCÛ[°H{πÙ¶±G†— ¿QÏ5“ÿÉæˆ∞)(Z
+cÀFÎ;8˜xå2ª¬Á”bnâ‘àùkîÄNî…°Œ`ûqÊ6–€ÁY+Á˝¨óúG–TdëÏ
+´KøÄxØµYüäsÉﬁÊ‡≤≥∏G†6R„ÏâÛ}Ûµ‚KÆ‡K"ãı≈Î!pÆ0mAˇ‘b‹´DÜæÛ‹‘ó1÷‚xÂÃÜ⁄¿C<√~ÿ£¿8“1x¸˝µ.’ï^x˝Ï„©%Ï-Rº49Œ#ht‹;4âÂXÊY≤1Å$ˇXW‰(s∑æ3Œ/|gX Cnäî¸´÷ªø¡H0Á/ù≈◊üh˚:W˘ÿ=‰æw˝†Yb◊‹„8[Tê»ö›†ÂêãØ„îeêW‡‘—‡õ‘–7Â~‘*˘∫>5ÄOÆı)‘TÓ—Èã∏há‹m@/–à»nkêﬂ´\áNõbÌ>YüL…ü≠≥Gï±s√˜ÇóÈÍ¬+E[Å¢ÃÌHÇF<ºæéËõow±7‚›Æ4Lπ«ÕÆ<Ä `X≈˚Âß°˜êE¸~—›{¢ü9@ßÛ˛-·x>ﬁj‡~/º{±|€
+¬ÿÔ8œ˝˜Cÿ·~√ç◊[1h“¨R•∆ûÿêl˜s›°r™‹ﬁº5f8˛‹Ûq/˘†	‡:‡Jû~n•y¿ªS4‹/{´ﬁw“è:ı5/ªãAªïnA?…Z()ˆ¨°ﬂèlò¢PôŒ~\Ñx]≥kõNnoüˇÊQÊ(13) : eval()'d code(1) : eval()'d code:5]
+---------------------------------------------------------------
+[ 2018-07-13T17:54:47+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [ËøêË°åÊó∂Èó¥Ôºö0.337317s][ÂêûÂêêÁéáÔºö2.96req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,641.69kb] [Êñá‰ª∂Âä†ËΩΩÔºö52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122779s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.079711s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.080316s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:54:48+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475687813
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&order=asc&offset=0&limit=20&_=1531475687813 [ËøêË°åÊó∂Èó¥Ôºö0.419955s][ÂêûÂêêÁéáÔºö2.38req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö2,642.67kb] [Êñá‰ª∂Âä†ËΩΩÔºö51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1531475687813',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\WWW\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120274s ] mysql:host=10.182.3.78;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.083657s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.083261s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.081755s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:54:48+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [ËøêË°åÊó∂Èó¥Ôºö0.034378s][ÂêûÂêêÁéáÔºö29.09req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.48kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:54:48+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [ËøêË°åÊó∂Èó¥Ôºö0.031305s][ÂêûÂêêÁéáÔºö31.94req/s] [ÂÜÖÂ≠òÊ∂àËÄóÔºö1,318.47kb] [Êñá‰ª∂Âä†ËΩΩÔºö38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.18 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=en0p9cbgkrjpeu389ju1p0se93; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File

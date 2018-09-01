@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>预览用例：{$mapName}</title>
+
+		<link href="__PUBLIC__/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+		<!-- bower:css -->
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/lib/codemirror.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/hotbox/hotbox.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/kityminder-core/dist/kityminder.core.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/color-picker/dist/color-picker.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/jquery-dialogBox/css/jquery.dialogbox.css" />
+		<link href="__PUBLIC__/static/H-ui.admin/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+		<!-- endbower -->
+
+		<link rel="stylesheet" href="__PUBLIC__/static/plugins/local-kitymind-master/kityminder.editor.min.css">
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			h1.editor-title {
+				background: #C81623;
+				color: white;
+				margin: 0;
+				height: 40px;
+				font-size: 14px;
+				line-height: 40px;
+				font-family: 'Hiragino Sans GB', 'Arial', 'Microsoft Yahei';
+				font-weight: normal;
+				padding: 0 20px;
+			}
+			
+			div.minder-editor-container {
+				position: absolute;
+				top: 40px;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+
+	<body ng-app="kityminderDemo" ng-controller="MainController">
+		<h1 class="editor-title"><a style="color: #fff; font-size: 16px;">预览用例：{$mapName}</a></h1>
+		<kityminder-editor on-init="initEditor(editor, minder)" data-theme="fresh-green"></kityminder-editor>
+		<iframe name="frameFile" style="display:none;"></iframe>
+		<div id="dialogBox"></div>
+	</body>
+
+	<!-- bower:js -->
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/jquery/dist/jquery.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/angular/angular.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/lib/codemirror.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/xml/xml.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/javascript/javascript.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/css/css.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/markdown/markdown.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/addon/mode/overlay.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/codemirror/mode/gfm/gfm.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/angular-ui-codemirror/ui-codemirror.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/marked/lib/marked.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/kity/dist/kity.min.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/hotbox/hotbox.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/json-diff/json-diff.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/kityminder-core/dist/kityminder.core.min.js"></script>
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/bower_components/color-picker/dist/color-picker.min.js"></script>
+	<!-- endbower -->
+
+	<script src="__PUBLIC__/static/plugins/local-kitymind-master/kityminder.editor.min.js"></script>
+	<script type="text/javascript">
+		var editor;
+		angular.module('kityminderDemo', ['kityminderEditor'])
+			.controller('MainController', function($scope) {
+				$scope.initEditor = function(editor, minder) {
+					window.editor = editor;
+					window.minder = minder;
+				};
+			});
+
+		//添加头部按钮组
+		var html = '&nbsp;&nbsp;&nbsp;&nbsp;<button class="diy btn btn-danger radius refreshMapData" data-type="json"><i class="Hui-iconfont">&#xe68f;</i> 刷新</button></div>';
+		$('.editor-title').append(html);
+		$(document).on('click', '.refreshMapData', function(event) {
+			refreshMapData();
+		});
+
+		//初始化事件
+		$(function() {
+			refreshMapData()
+		});
+
+		//刷新Flow数据
+		function refreshMapData() {
+			$.ajax({
+				data: {
+					'mapId': '{$mapId}'
+				},
+				url: "__MindMapURL__/share_management/getMapData",
+				type: "post",
+				success: function(data) {
+					if(data.length <= 0) { //如果查询出来的数据为空，则将data设置为空的json
+						data = "{}";
+					}
+					editor.minder.importData('json', data);
+					showDialog('&#xe6a7;', '已完成数据加载！', 500)
+				}
+			});
+		}
+
+	</script>
+
+</html>

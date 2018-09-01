@@ -1,0 +1,2046 @@
+---------------------------------------------------------------
+[ 2018-04-14T18:13:44+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.064829s][吞吐率：15.43req/s] [内存消耗：1,754.85kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:13:44+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.047664s][吞吐率：20.98req/s] [内存消耗：1,710.20kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:29:40+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.049338s][吞吐率：20.27req/s] [内存消耗：1,708.47kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:29:44+08:00 ] 127.0.0.1 POST /index.php/index/Login/verifyLogin
+[ info ] 127.0.0.1/index.php/index/Login/verifyLogin [运行时间：0.059768s][吞吐率：16.73req/s] [内存消耗：2,644.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'verifyLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/',
+  'content-length' => '25',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'fjk',
+  'userPwd' => 'Zmpr',
+)
+[ info ] [ RUN ] app\index\controller\Login->verifyLogin[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003183s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.007543s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_user` WHERE  `user_name` = 'fjk'  AND `status` <> 0 LIMIT 1 [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:29:44+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.031018s][吞吐率：32.24req/s] [内存消耗：1,584.72kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:29:44+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.038548s][吞吐率：25.94req/s] [内存消耗：1,566.53kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:29:50+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management
+[ info ] 127.0.0.1/index.php/testcase/testcase_management [运行时间：0.105366s][吞吐率：9.49req/s] [内存消耗：2,865.89kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->index[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\index.html [ array (
+  0 => 'prjLst',
+  1 => 'realName',
+  2 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001990s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_project` [ RunTime:0.012268s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_project` WHERE  ( `status` <> 0 AND `status` <> 2 ) ORDER BY id desc [ RunTime:0.000967s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:29:53+08:00 ] 127.0.0.1 POST /index.php/testcase/node_management/getPrjNode
+[ info ] 127.0.0.1/index.php/testcase/node_management/getPrjNode [运行时间：0.070456s][吞吐率：14.19req/s] [内存消耗：2,659.85kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'node_management',
+    2 => 'getPrjNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'content-length' => '8',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'prjId' => '66',
+)
+[ info ] [ RUN ] app\testcase\controller\NodeManagement->getPrjNode[ D:\phpStudy\WWW\application\testcase\controller\NodeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010360s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.009031s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `prj_id` = 66  AND `status` = 1 ORDER BY id desc [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:29:53+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=15
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15 [运行时间：0.074393s][吞吐率：13.44req/s] [内存消耗：2,868.92kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001434s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.011772s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:29:53+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523701790734
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523701790734 [运行时间：0.121615s][吞吐率：8.22req/s] [内存消耗：2,713.48kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523701790734',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001496s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.007983s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 ORDER BY id desc LIMIT 0,20 [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 LIMIT 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:29:54+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getFlowData
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getFlowData [运行时间：0.090707s][吞吐率：11.02req/s] [内存消耗：2,720.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getFlowData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15',
+  'content-length' => '9',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getFlowData[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_flow` [ RunTime:0.011322s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_flow` WHERE  `node_id` = 15 LIMIT 1 [ RunTime:0.000875s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:31:03+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management
+[ info ] 127.0.0.1/index.php/testcase/testcase_management [运行时间：0.123230s][吞吐率：8.11req/s] [内存消耗：2,706.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->index[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\index.html [ array (
+  0 => 'prjLst',
+  1 => 'realName',
+  2 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002005s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_project` [ RunTime:0.014702s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_project` WHERE  ( `status` <> 0 AND `status` <> 2 ) ORDER BY id desc [ RunTime:0.001253s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:31:05+08:00 ] 127.0.0.1 POST /index.php/testcase/node_management/getPrjNode
+[ info ] 127.0.0.1/index.php/testcase/node_management/getPrjNode [运行时间：0.070187s][吞吐率：14.25req/s] [内存消耗：2,659.85kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'node_management',
+    2 => 'getPrjNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'content-length' => '8',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'prjId' => '66',
+)
+[ info ] [ RUN ] app\testcase\controller\NodeManagement->getPrjNode[ D:\phpStudy\WWW\application\testcase\controller\NodeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001442s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.009360s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `prj_id` = 66  AND `status` = 1 ORDER BY id desc [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:31:06+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=15
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15 [运行时间：0.078572s][吞吐率：12.73req/s] [内存消耗：2,712.97kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003205s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.009969s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:31:06+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523701863240
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523701863240 [运行时间：0.077503s][吞吐率：12.90req/s] [内存消耗：2,713.20kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523701863240',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001575s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.008278s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 LIMIT 1 [ RunTime:0.000431s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:31:07+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getFlowData
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getFlowData [运行时间：0.086183s][吞吐率：11.60req/s] [内存消耗：2,720.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getFlowData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15',
+  'content-length' => '9',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getFlowData[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_flow` [ RunTime:0.007897s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_flow` WHERE  `node_id` = 15 LIMIT 1 [ RunTime:0.001407s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:06+08:00 ] 127.0.0.1 GET /index.php
+[ info ] 127.0.0.1/index.php [运行时间：0.363268s][吞吐率：2.75req/s] [内存消耗：1,610.54kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 60 seconds exceeded[x��T�n�F~�H��h�%i�RW�8ƃ���2?v�=��ԇ�Hb�RߠH�a.g��]�&�N��P|��}r���������ۍ{7���?\'w7��r{7�N_��t:y���~:�����L���7!���b�X�ltV���cS��.�<���ot�l�(iSC�k[2�aJ��YCr��2R�Z��eX�2K=�FK�D^bk4%�[��ǝ� ��kMMC_�o���}�iWG�+]K�%���N��<��ʯV�c�y�-�����u�E��3Cs��x�_�l5�����E9���yѬ�
+Ξ)�y�]�⥐p<C��S�4����KT�[�|�T8gV�R��E�=�����Oa��؛3ˈ��BIi�w_:kװ7�m)��⽷��C��[�H{����G�� �Q�5�؃���)(Z
+c�F�;8�x�2����b�n�Ԉ�k��N�ɡ�`�q�6���Y+�����G�Td��
+�K��x��Y��s���ಳ�G�6�R���}��K��K"����!p�0mA��bܫD����ԗ1��x�̆��C<�~أ�8�1x���.��^x����%�-R�49�#ht�;4��X�Y�1�$�XW�(s��3�/|gX Cn����ֻ��H0�/��ןh�:W��=��w��Yb���8[T�Țݠ吋��e�W�������7�~�*��>5�O��)�T����h��m@/Ј�nk�߫\�N�b�>Y�L����G��s�������+E[����H�F<����ow�7�ݮ4L����<��`�X�������E�~��{��9@���-�x>��j�~/�{�|�
+���8���C��~Í�[1hҬR�ƞؐl�sݡr�����5f8���q/��	�:�J�~n�y��S4�/�{��wҏ:�5/��A��nA?�Z()���ߏl��P��~\�x]�k�Nno���Q�(13) : eval()'d code(1) : eval()'d code:5]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:23+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.047898s][吞吐率：20.88req/s] [内存消耗：1,562.84kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:44+08:00 ] 127.0.0.1 POST /index.php/index/Login/verifyLogin
+[ info ] 127.0.0.1/index.php/index/Login/verifyLogin [运行时间：0.059854s][吞吐率：16.71req/s] [内存消耗：2,644.44kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'verifyLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'content-length' => '25',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'fjk',
+  'userPwd' => 'Zmpr',
+)
+[ info ] [ RUN ] app\index\controller\Login->verifyLogin[ D:\phpStudy\WWW\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001746s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.007586s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_user` WHERE  `user_name` = 'fjk'  AND `status` <> 0 LIMIT 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:44+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.034919s][吞吐率：28.64req/s] [内存消耗：1,584.11kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:44+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.039785s][吞吐率：25.14req/s] [内存消耗：1,565.91kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:48+08:00 ] 127.0.0.1 GET /index.php/mindmap/map_management
+[ info ] 127.0.0.1/index.php/mindmap/map_management [运行时间：0.044737s][吞吐率：22.35req/s] [内存消耗：1,740.48kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mindmap',
+    1 => 'map_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\mindmap\controller\MapManagement->index[ D:\phpStudy\WWW\application\mindmap\controller\MapManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/mindmap\view\map_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:49+08:00 ] 127.0.0.1 POST /index.php/mindmap/map_management/getMapNode
+[ info ] 127.0.0.1/index.php/mindmap/map_management/getMapNode [运行时间：0.095051s][吞吐率：10.52req/s] [内存消耗：2,684.03kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mindmap',
+    1 => 'map_management',
+    2 => 'getMapNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/mindmap/map_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'content-length' => '8',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'userId' => '1',
+)
+[ info ] [ RUN ] app\mindmap\controller\MapManagement->getMapNode[ D:\phpStudy\WWW\application\mindmap\controller\MapManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001362s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_mind_map` [ RunTime:0.011669s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_mind_map` WHERE  `creator_id` = 1  AND `status` = 1 ORDER BY id desc [ RunTime:0.001158s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:49+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.eot?
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.eot? [运行时间：0.044865s][吞吐率：22.29req/s] [内存消耗：1,317.80kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/index.php/mindmap/map_management',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.eot',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:49+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.040687s][吞吐率：24.58req/s] [内存消耗：1,317.80kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/index.php/mindmap/map_management',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:49+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.043263s][吞吐率：23.11req/s] [内存消耗：1,317.74kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/index.php/mindmap/map_management',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:50+08:00 ] 127.0.0.1 GET /index.php/mindmap/share_management
+[ info ] 127.0.0.1/index.php/mindmap/share_management [运行时间：0.052394s][吞吐率：19.09req/s] [内存消耗：1,714.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mindmap',
+    1 => 'share_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\mindmap\controller\ShareManagement->index[ D:\phpStudy\WWW\application\mindmap\controller\ShareManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/mindmap\view\share_management\index.html [ array (
+  0 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:32:51+08:00 ] 127.0.0.1 GET /index.php/mindmap/share_management/getShareList?usrId=1&order=asc&offset=0&limit=20&_=1523701970345
+[ info ] 127.0.0.1/index.php/mindmap/share_management/getShareList?usrId=1&order=asc&offset=0&limit=20&_=1523701970345 [运行时间：0.098890s][吞吐率：10.11req/s] [内存消耗：2,638.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mindmap',
+    1 => 'share_management',
+    2 => 'getShareList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/json',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/mindmap/share_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'usrId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523701970345',
+)
+[ info ] [ RUN ] app\mindmap\controller\ShareManagement->getShareList[ D:\phpStudy\WWW\application\mindmap\controller\ShareManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001330s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_map_share` [ RunTime:0.012141s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_map_share` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_map_share` LIMIT 1 [ RunTime:0.000287s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:52+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management
+[ info ] 127.0.0.1/index.php/testcase/testcase_management [运行时间：0.080104s][吞吐率：12.48req/s] [内存消耗：2,706.03kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->index[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\index.html [ array (
+  0 => 'prjLst',
+  1 => 'realName',
+  2 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001496s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_project` [ RunTime:0.012091s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_project` WHERE  ( `status` <> 0 AND `status` <> 2 ) ORDER BY id desc [ RunTime:0.000796s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:55+08:00 ] 127.0.0.1 POST /index.php/testcase/node_management/getPrjNode
+[ info ] 127.0.0.1/index.php/testcase/node_management/getPrjNode [运行时间：0.074454s][吞吐率：13.43req/s] [内存消耗：2,659.55kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'node_management',
+    2 => 'getPrjNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'content-length' => '8',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'prjId' => '73',
+)
+[ info ] [ RUN ] app\testcase\controller\NodeManagement->getPrjNode[ D:\phpStudy\WWW\application\testcase\controller\NodeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001471s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.008496s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `prj_id` = 73  AND `status` = 1 ORDER BY id desc [ RunTime:0.001232s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:56+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=19
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=19 [运行时间：0.079222s][吞吐率：12.62req/s] [内存消耗：2,712.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '19',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001505s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.014228s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:32:56+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=19&order=asc&offset=0&limit=20&_=1523701972827
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=19&order=asc&offset=0&limit=20&_=1523701972827 [运行时间：0.130702s][吞吐率：7.65req/s] [内存消耗：2,713.17kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/json',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '19',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523701972827',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001861s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.010308s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 19 ORDER BY id desc LIMIT 0,20 [ RunTime:0.001266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 19 LIMIT 1 [ RunTime:0.000602s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:33:03+08:00 ] 127.0.0.1 POST /index.php/testcase/node_management/getPrjNode
+[ info ] 127.0.0.1/index.php/testcase/node_management/getPrjNode [运行时间：0.060118s][吞吐率：16.63req/s] [内存消耗：2,659.54kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'node_management',
+    2 => 'getPrjNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'content-length' => '8',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'prjId' => '58',
+)
+[ info ] [ RUN ] app\testcase\controller\NodeManagement->getPrjNode[ D:\phpStudy\WWW\application\testcase\controller\NodeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.009850s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `prj_id` = 58  AND `status` = 1 ORDER BY id desc [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:33:04+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=24
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=24 [运行时间：0.071172s][吞吐率：14.05req/s] [内存消耗：2,712.62kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '24',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001496s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.009215s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:33:04+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=24&order=asc&offset=0&limit=20&_=1523701972828
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=24&order=asc&offset=0&limit=20&_=1523701972828 [运行时间：0.089716s][吞吐率：11.15req/s] [内存消耗：2,713.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/json',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '24',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523701972828',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001330s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.007713s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 24 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 24 LIMIT 1 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:33:32+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getTestCaseInfo
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCaseInfo [运行时间：0.119995s][吞吐率：8.33req/s] [内存消耗：2,730.61kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCaseInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'host' => '127.0.0.1',
+  'content-length' => '17',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'PHPSESSID=oui50bf7jdud7v05ullbdtisi1; userName=null; rememberUser=null',
+)
+[ info ] [ PARAM ] array (
+  'tcId' => '56',
+  'nodeId' => '24',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCaseInfo[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003713s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.018546s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `id` = 56 LIMIT 1 [ RunTime:0.001720s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `node_id` = 24  AND `id` > 56  AND `status` <> 0 ORDER BY id asc LIMIT 1 [ RunTime:0.001355s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `node_id` = 24  AND `id` < 56  AND `status` <> 0 ORDER BY id desc LIMIT 1 [ RunTime:0.002441s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:51:29+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management
+[ info ] 127.0.0.1/index.php/testcase/testcase_management [运行时间：0.100653s][吞吐率：9.94req/s] [内存消耗：2,706.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->index[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\index.html [ array (
+  0 => 'prjLst',
+  1 => 'realName',
+  2 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002292s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_project` [ RunTime:0.011232s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_project` WHERE  ( `status` <> 0 AND `status` <> 2 ) ORDER BY id desc [ RunTime:0.000843s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:51:31+08:00 ] 127.0.0.1 POST /index.php/testcase/node_management/getPrjNode
+[ info ] 127.0.0.1/index.php/testcase/node_management/getPrjNode [运行时间：0.060279s][吞吐率：16.59req/s] [内存消耗：2,659.85kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'node_management',
+    2 => 'getPrjNode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'content-length' => '8',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'prjId' => '66',
+)
+[ info ] [ RUN ] app\testcase\controller\NodeManagement->getPrjNode[ D:\phpStudy\WWW\application\testcase\controller\NodeManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001270s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.006309s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `prj_id` = 66  AND `status` = 1 ORDER BY id desc [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:46+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=15
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15 [运行时间：0.080466s][吞吐率：12.43req/s] [内存消耗：2,712.97kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002260s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.010230s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:46+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523703089468
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=15&order=asc&offset=0&limit=20&_=1523703089468 [运行时间：0.126930s][吞吐率：7.88req/s] [内存消耗：2,713.48kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523703089468',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022915s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.015353s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 ORDER BY id desc LIMIT 0,20 [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 15 LIMIT 1 [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:47+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getFlowData
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getFlowData [运行时间：0.083261s][吞吐率：12.01req/s] [内存消耗：2,720.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getFlowData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=15',
+  'content-length' => '9',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '15',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getFlowData[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001470s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_flow` [ RunTime:0.011353s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_flow` WHERE  `node_id` = 15 LIMIT 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:49+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=13
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=13 [运行时间：0.075977s][吞吐率：13.16req/s] [内存消耗：2,712.97kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '13',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001372s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.013746s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:49+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=13&order=asc&offset=0&limit=20&_=1523703089469
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=13&order=asc&offset=0&limit=20&_=1523703089469 [运行时间：0.116976s][吞吐率：8.55req/s] [内存消耗：2,713.48kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '13',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523703089469',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003197s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.028224s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 13 ORDER BY id desc LIMIT 0,20 [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 13 LIMIT 1 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:50+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getFlowData
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getFlowData [运行时间：0.092825s][吞吐率：10.77req/s] [内存消耗：2,717.13kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getFlowData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=13',
+  'content-length' => '9',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '13',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getFlowData[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001698s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_flow` [ RunTime:0.015587s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_flow` WHERE  `node_id` = 13 LIMIT 1 [ RunTime:0.004935s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:52+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/flow_page?nodeId=12
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=12 [运行时间：0.093012s][吞吐率：10.75req/s] [内存消耗：2,713.00kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'flow_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '12',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->flow_page[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\testcase_management\flow_page.html [ array (
+  0 => 'nodeId',
+  1 => 'nodeName',
+  2 => 'PrjId',
+  3 => 'creatorName',
+  4 => 'realName',
+  5 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001404s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.012778s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:52+08:00 ] 127.0.0.1 GET /index.php/testcase/testcase_management/getTestCase?nodeId=12&order=asc&offset=0&limit=20&_=1523703089470
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getTestCase?nodeId=12&order=asc&offset=0&limit=20&_=1523703089470 [运行时间：0.084677s][吞吐率：11.81req/s] [内存消耗：2,713.48kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getTestCase',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '12',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523703089470',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getTestCase[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001322s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_testcase` [ RunTime:0.009378s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 12 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_testcase` WHERE  `status` <> 0  AND `node_id` = 12 LIMIT 1 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:56:53+08:00 ] 127.0.0.1 POST /index.php/testcase/testcase_management/getFlowData
+[ info ] 127.0.0.1/index.php/testcase/testcase_management/getFlowData [运行时间：0.083533s][吞吐率：11.97req/s] [内存消耗：2,718.51kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'testcase_management',
+    2 => 'getFlowData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/testcase_management/flow_page?nodeId=12',
+  'content-length' => '9',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'nodeId' => '12',
+)
+[ info ] [ RUN ] app\testcase\controller\TestcaseManagement->getFlowData[ D:\phpStudy\WWW\application\testcase\controller\TestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002058s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_flow` [ RunTime:0.012687s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_flow` WHERE  `node_id` = 12 LIMIT 1 [ RunTime:0.000686s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:57:20+08:00 ] 127.0.0.1 GET /index.php/testcase/share_management
+[ info ] 127.0.0.1/index.php/testcase/share_management [运行时间：0.063618s][吞吐率：15.72req/s] [内存消耗：1,716.52kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'share_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\ShareManagement->index[ D:\phpStudy\WWW\application\testcase\controller\ShareManagement.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\share_management\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:57:20+08:00 ] 127.0.0.1 GET /index.php/testcase/share_management/getShareList?order=asc&offset=0&limit=20&_=1523703440392
+[ info ] 127.0.0.1/index.php/testcase/share_management/getShareList?order=asc&offset=0&limit=20&_=1523703440392 [运行时间：0.110500s][吞吐率：9.05req/s] [内存消耗：2,690.94kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'share_management',
+    2 => 'getShareList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/share_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523703440392',
+)
+[ info ] [ RUN ] app\testcase\controller\ShareManagement->getShareList[ D:\phpStudy\WWW\application\testcase\controller\ShareManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001036s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_tc_share` [ RunTime:0.014950s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_tc_share` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_tc_share` LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.012489s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-04-14T18:57:33+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.032784s][吞吐率：30.50req/s] [内存消耗：1,584.72kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:57:33+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.036976s][吞吐率：27.04req/s] [内存消耗：1,566.53kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\WWW\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:57:36+08:00 ] 127.0.0.1 GET /index.php/testcase/share_management
+[ info ] 127.0.0.1/index.php/testcase/share_management [运行时间：0.044712s][吞吐率：22.37req/s] [内存消耗：1,570.06kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'share_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\testcase\controller\ShareManagement->index[ D:\phpStudy\WWW\application\testcase\controller\ShareManagement.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW/application/testcase\view\share_management\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-14T18:57:37+08:00 ] 127.0.0.1 GET /index.php/testcase/share_management/getShareList?order=asc&offset=0&limit=20&_=1523703456810
+[ info ] 127.0.0.1/index.php/testcase/share_management/getShareList?order=asc&offset=0&limit=20&_=1523703456810 [运行时间：0.123127s][吞吐率：8.12req/s] [内存消耗：2,690.94kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'testcase',
+    1 => 'share_management',
+    2 => 'getShareList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://127.0.0.1/index.php/testcase/share_management',
+  'cookie' => 'PHPSESSID=edb93f5ulvjl11jegm54o1h7e3; userName=null; rememberUser=null',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1523703456810',
+)
+[ info ] [ RUN ] app\testcase\controller\ShareManagement->getShareList[ D:\phpStudy\WWW\application\testcase\controller\ShareManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002754s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_tc_share` [ RunTime:0.010455s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_tc_share` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_tc_share` LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_node` [ RunTime:0.012452s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.002347s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002769s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_node` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000405s ]

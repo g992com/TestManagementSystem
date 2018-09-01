@@ -1,0 +1,1391 @@
+---------------------------------------------------------------
+[ 2018-08-10T10:43:18+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.285238s][吞吐率：3.51req/s] [内存消耗：1,568.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:43:24+08:00 ] 127.0.0.1 POST /index.php/index/Login/verifyLogin
+[ info ] 127.0.0.1/index.php/index/Login/verifyLogin [运行时间：0.634337s][吞吐率：1.58req/s] [内存消耗：2,651.01kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'verifyLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '25',
+  'cookie' => 'userName=null; rememberUser=null; PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'fjk',
+  'userPwd' => 'Zmpr',
+)
+[ info ] [ RUN ] app\index\controller\Login->verifyLogin[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152388s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.101060s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_user` WHERE  `user_name` = 'fjk'  AND `status` <> 0 LIMIT 1 [ RunTime:0.110328s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:43:25+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.085828s][吞吐率：11.65req/s] [内存消耗：1,589.55kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:43:25+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.062679s][吞吐率：15.95req/s] [内存消耗：1,571.33kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:43:29+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [运行时间：1.242916s][吞吐率：0.80req/s] [内存消耗：3,031.70kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+  3 => 'testModules',
+  4 => 'testTypes',
+  5 => 'testEnvs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152835s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.100860s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.102486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.101290s ]
+[ sql ] [ SQL ] SELECT `id`,`module_name` FROM `tms_test_module` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.098421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.101195s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name` FROM `tms_test_type` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.099725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.100969s ]
+[ sql ] [ SQL ] SELECT `id`,`env_name` FROM `tms_test_env` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.100628s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:43:41+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869009110
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869009110 [运行时间：12.790968s][吞吐率：0.08req/s] [内存消耗：3,209.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'keys' => '',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '40',
+  '_' => '1533869009110',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147874s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.102339s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,40 [ RunTime:0.153785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.101040s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.112801s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.102310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.103067s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.102538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.102899s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.101603s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.100708s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.098024s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099344s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098099s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099364s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099628s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098861s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099233s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097806s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098140s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.102169s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099777s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097618s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.096502s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.101397s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.099280s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.100511s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099876s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098432s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097251s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097517s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097324s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097094s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.096262s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.095952s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099302s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.103421s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097854s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099167s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.103953s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098205s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096987s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099009s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098940s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.100995s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099633s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098805s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098556s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098141s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100154s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097281s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096719s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096678s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097333s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097582s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099419s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.111013s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096921s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098469s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098218s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096419s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099506s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.100103s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098308s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098201s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097630s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098318s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098596s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098083s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098970s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097101s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099136s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097439s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096272s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097499s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096925s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097899s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097546s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098819s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097297s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097869s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099245s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097511s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099291s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096208s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097373s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097375s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096767s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096503s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.106890s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097637s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096372s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.100119s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.101261s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098282s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.101196s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098241s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097189s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097986s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099868s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097445s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098532s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098003s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098062s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098195s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096333s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097852s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097840s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098415s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098056s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098992s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096270s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097915s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097362s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098884s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099995s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098254s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097097s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.095729s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098754s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097095s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097800s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097835s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096561s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098225s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097345s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098182s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:43:42+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.096866s][吞吐率：10.32req/s] [内存消耗：1,322.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:43:42+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.024943s][吞吐率：40.09req/s] [内存消耗：1,322.08kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:01+08:00 ] 127.0.0.1 GET /index.php/listtestcase/base_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/base_testcase_management [运行时间：1.275424s][吞吐率：0.78req/s] [内存消耗：2,751.68kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'base_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\BaseTestcaseManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\BaseTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\base_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+  3 => 'testModules',
+  4 => 'testTypes',
+  5 => 'testEnvs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.154584s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.140081s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.110989s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.114868s ]
+[ sql ] [ SQL ] SELECT `id`,`module_name` FROM `tms_test_module` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.097779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.107649s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name` FROM `tms_test_type` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.115383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.106684s ]
+[ sql ] [ SQL ] SELECT `id`,`env_name` FROM `tms_test_env` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.108971s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:50:02+08:00 ] 127.0.0.1 GET /index.php/listtestcase/base_testcase_management/getTestcaseList?testModuleId=0&userId=1&order=asc&offset=0&limit=20&_=1533869401363
+[ info ] 127.0.0.1/index.php/listtestcase/base_testcase_management/getTestcaseList?testModuleId=0&userId=1&order=asc&offset=0&limit=20&_=1533869401363 [运行时间：0.616244s][吞吐率：1.62req/s] [内存消耗：2,702.77kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'base_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/base_testcase_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'testModuleId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1533869401363',
+)
+[ info ] [ RUN ] app\listtestcase\controller\BaseTestcaseManagement->getTestcaseList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\BaseTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.158521s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_base_testcase` [ RunTime:0.132385s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_base_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.122185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_base_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.121182s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:50:02+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.040913s][吞吐率：24.44req/s] [内存消耗：1,322.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:02+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.036756s][吞吐率：27.21req/s] [内存消耗：1,322.08kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:23+08:00 ] 127.0.0.1 GET /index.php/listtestcase/base_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/base_testcase_management [运行时间：1.144369s][吞吐率：0.87req/s] [内存消耗：2,935.73kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'base_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\BaseTestcaseManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\BaseTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\base_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+  3 => 'testModules',
+  4 => 'testTypes',
+  5 => 'testEnvs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.156141s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.106800s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.109154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.102155s ]
+[ sql ] [ SQL ] SELECT `id`,`module_name` FROM `tms_test_module` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.099724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.102210s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name` FROM `tms_test_type` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.099464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.101021s ]
+[ sql ] [ SQL ] SELECT `id`,`env_name` FROM `tms_test_env` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.100655s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:50:23+08:00 ] 127.0.0.1 GET /index.php/listtestcase/base_testcase_management/getTestcaseList?testModuleId=0&userId=1&order=asc&offset=0&limit=20&_=1533869423180
+[ info ] 127.0.0.1/index.php/listtestcase/base_testcase_management/getTestcaseList?testModuleId=0&userId=1&order=asc&offset=0&limit=20&_=1533869423180 [运行时间：0.558716s][吞吐率：1.79req/s] [内存消耗：2,702.77kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'base_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/base_testcase_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'testModuleId' => '0',
+  'userId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '20',
+  '_' => '1533869423180',
+)
+[ info ] [ RUN ] app\listtestcase\controller\BaseTestcaseManagement->getTestcaseList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\BaseTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164006s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_base_testcase` [ RunTime:0.104842s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_base_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.118075s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_base_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.100208s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:50:23+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.037731s][吞吐率：26.50req/s] [内存消耗：1,322.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:23+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.030680s][吞吐率：32.59req/s] [内存消耗：1,322.08kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:49+08:00 ] 127.0.0.1 GET /index.php/listtestcase/test_plan_management
+[ info ] 127.0.0.1/index.php/listtestcase/test_plan_management [运行时间：0.137901s][吞吐率：7.25req/s] [内存消耗：1,752.89kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'test_plan_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\TestPlanManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\TestPlanManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\test_plan_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:50:51+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [运行时间：1.084003s][吞吐率：0.92req/s] [内存消耗：3,032.27kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+  3 => 'testModules',
+  4 => 'testTypes',
+  5 => 'testEnvs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.158488s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.102919s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.108861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.101242s ]
+[ sql ] [ SQL ] SELECT `id`,`module_name` FROM `tms_test_module` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.099560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.100763s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name` FROM `tms_test_type` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.100484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.100834s ]
+[ sql ] [ SQL ] SELECT `id`,`env_name` FROM `tms_test_env` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.100492s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:50:56+08:00 ] 127.0.0.1 GET /index.php/listtestcase/test_plan_management/getTestPlanList?keys=&statusId=1&order=asc&offset=0&limit=40&_=1533869449771
+[ info ] 127.0.0.1/index.php/listtestcase/test_plan_management/getTestPlanList?keys=&statusId=1&order=asc&offset=0&limit=40&_=1533869449771 [运行时间：7.013391s][吞吐率：0.14req/s] [内存消耗：2,910.55kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'test_plan_management',
+    2 => 'getTestPlanList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/test_plan_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'statusId' => '1',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '40',
+  '_' => '1533869449771',
+)
+[ info ] [ RUN ] app\listtestcase\controller\TestPlanManagement->getTestPlanList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\TestPlanManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150298s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.102262s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,40 [ RunTime:0.100224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_test_plan` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.098477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.102395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 23 LIMIT 1 [ RunTime:0.100187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 23 LIMIT 1 [ RunTime:0.100052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 23 LIMIT 1 [ RunTime:0.099587s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 22 LIMIT 1 [ RunTime:0.099133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 22 LIMIT 1 [ RunTime:0.100090s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 22 LIMIT 1 [ RunTime:0.100804s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 21 LIMIT 1 [ RunTime:0.101325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 21 LIMIT 1 [ RunTime:0.102128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 21 LIMIT 1 [ RunTime:0.097361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 20 LIMIT 1 [ RunTime:0.098808s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 20 LIMIT 1 [ RunTime:0.099691s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 20 LIMIT 1 [ RunTime:0.098829s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 19 LIMIT 1 [ RunTime:0.099509s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 19 LIMIT 1 [ RunTime:0.098589s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 19 LIMIT 1 [ RunTime:0.098488s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 18 LIMIT 1 [ RunTime:0.099463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 18 LIMIT 1 [ RunTime:0.100610s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 18 LIMIT 1 [ RunTime:0.101559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 17 LIMIT 1 [ RunTime:0.097175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 17 LIMIT 1 [ RunTime:0.098093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 17 LIMIT 1 [ RunTime:0.097477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 16 LIMIT 1 [ RunTime:0.098671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 16 LIMIT 1 [ RunTime:0.097066s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 16 LIMIT 1 [ RunTime:0.102366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 15 LIMIT 1 [ RunTime:0.097610s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 15 LIMIT 1 [ RunTime:0.098362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 15 LIMIT 1 [ RunTime:0.097345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 14 LIMIT 1 [ RunTime:0.096723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 14 LIMIT 1 [ RunTime:0.097713s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 14 LIMIT 1 [ RunTime:0.099241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 13 LIMIT 1 [ RunTime:0.098728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 13 LIMIT 1 [ RunTime:0.098698s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 13 LIMIT 1 [ RunTime:0.097198s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 12 LIMIT 1 [ RunTime:0.099063s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 12 LIMIT 1 [ RunTime:0.098049s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 12 LIMIT 1 [ RunTime:0.099291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 11 LIMIT 1 [ RunTime:0.097066s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 11 LIMIT 1 [ RunTime:0.100474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 11 LIMIT 1 [ RunTime:0.099984s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 10 LIMIT 1 [ RunTime:0.100117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 10 LIMIT 1 [ RunTime:0.096416s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 10 LIMIT 1 [ RunTime:0.099301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 9 LIMIT 1 [ RunTime:0.102104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 9 LIMIT 1 [ RunTime:0.098465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 9 LIMIT 1 [ RunTime:0.097810s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 8 LIMIT 1 [ RunTime:0.100002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 8 LIMIT 1 [ RunTime:0.147721s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 8 LIMIT 1 [ RunTime:0.139858s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 7 LIMIT 1 [ RunTime:0.118220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 7 LIMIT 1 [ RunTime:0.099231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 7 LIMIT 1 [ RunTime:0.097681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 6 LIMIT 1 [ RunTime:0.098461s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 6 LIMIT 1 [ RunTime:0.098618s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 6 LIMIT 1 [ RunTime:0.097025s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 4 LIMIT 1 [ RunTime:0.098987s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 4 LIMIT 1 [ RunTime:0.097645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 4 LIMIT 1 [ RunTime:0.098096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 3 LIMIT 1 [ RunTime:0.097808s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 3 LIMIT 1 [ RunTime:0.098976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 3 LIMIT 1 [ RunTime:0.103643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0  AND `test_plan_id` = 2 LIMIT 1 [ RunTime:0.098731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 4  AND `test_plan_id` = 2 LIMIT 1 [ RunTime:0.097716s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` = 5  AND `test_plan_id` = 2 LIMIT 1 [ RunTime:0.097982s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:51:04+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869451151
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869451151 [运行时间：12.871983s][吞吐率：0.08req/s] [内存消耗：3,209.34kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'keys' => '',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '40',
+  '_' => '1533869451151',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147747s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.110595s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,40 [ RunTime:0.154331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.101941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.102144s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.100417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.100731s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099908s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.102610s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.101298s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098951s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.098496s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.096228s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.096363s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.098592s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097650s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097138s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097958s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097677s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097686s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.098382s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099768s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.096703s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099252s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099225s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098085s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099382s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096920s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.102501s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.098945s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.100421s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.099029s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097560s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.101293s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097437s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097638s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.101797s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.147779s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.137865s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.107010s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097353s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099769s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098639s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097842s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097217s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099181s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097684s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098347s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097907s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098738s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097446s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097473s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098625s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097579s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099613s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099026s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097369s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098900s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098985s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098324s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099866s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099652s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098377s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099130s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.103335s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096397s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099060s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097745s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097586s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098464s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097949s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096843s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097774s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097487s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.100267s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099184s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097854s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098678s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097197s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096716s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.095821s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099371s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098519s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098532s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098107s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098556s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.101210s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097997s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099996s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099017s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098160s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098746s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098064s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.100343s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097523s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097130s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097606s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098459s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098108s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099036s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098714s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097062s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098505s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098018s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097945s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099724s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096452s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096353s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098909s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097844s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098316s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097360s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097579s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098825s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098826s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100315s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096783s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096876s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100986s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.100067s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099450s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099835s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097756s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098985s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097876s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097728s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097309s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:51:04+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.031148s][吞吐率：32.10req/s] [内存消耗：1,322.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:51:04+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.035181s][吞吐率：28.42req/s] [内存消耗：1,322.08kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:51:35+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management [运行时间：1.061937s][吞吐率：0.94req/s] [内存消耗：3,032.27kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/listtestcase\view\list_testcase_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+  2 => 'testPlans',
+  3 => 'testModules',
+  4 => 'testTypes',
+  5 => 'testEnvs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150159s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.102826s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.104994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.103629s ]
+[ sql ] [ SQL ] SELECT `id`,`module_name` FROM `tms_test_module` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.098913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.100686s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name` FROM `tms_test_type` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.100841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.099713s ]
+[ sql ] [ SQL ] SELECT `id`,`env_name` FROM `tms_test_env` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.101466s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:51:48+08:00 ] 127.0.0.1 GET /index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869495284
+[ info ] 127.0.0.1/index.php/listtestcase/list_testcase_management/getTestcaseList?testPlanId=0&userId=1&keys=&order=asc&offset=0&limit=40&_=1533869495284 [运行时间：12.710186s][吞吐率：0.08req/s] [内存消耗：3,209.34kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'listtestcase',
+    1 => 'list_testcase_management',
+    2 => 'getTestcaseList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/listtestcase/list_testcase_management',
+  'content-type' => 'application/json',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'testPlanId' => '0',
+  'userId' => '1',
+  'keys' => '',
+  'order' => 'asc',
+  'offset' => '0',
+  'limit' => '40',
+  '_' => '1533869495284',
+)
+[ info ] [ RUN ] app\listtestcase\controller\ListTestcaseManagement->getTestcaseList[ D:\phpStudy\TestManagementSystem\htdocs\application\listtestcase\controller\ListTestcaseManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151133s ] mysql:host=10.182.90.55;port=3358;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_list_testcase` [ RunTime:0.102583s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_list_testcase` WHERE  `status` <> 0 ORDER BY id desc LIMIT 0,40 [ RunTime:0.154423s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tms_list_testcase` WHERE  `status` <> 0 LIMIT 1 [ RunTime:0.103994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_module` [ RunTime:0.101204s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_type` [ RunTime:0.102687s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.104266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_env` [ RunTime:0.103631s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.100709s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.101727s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.101269s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099329s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.100176s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097472s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.098363s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098959s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.108178s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.099205s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.100344s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099847s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.098320s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098331s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.097435s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097309s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.097880s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.099507s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.103743s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.096918s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.096939s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.098048s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.098540s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.096479s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097714s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.096392s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.096467s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097564s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096610s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098030s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096472s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096172s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097434s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097932s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.099058s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.099108s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.100107s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097194s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096970s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097137s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097262s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098146s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098066s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100975s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097365s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097614s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096560s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097098s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097436s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097930s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097590s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097043s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097352s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098794s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098162s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096867s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098227s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096618s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096797s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097647s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097821s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100579s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097819s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097935s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098550s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098315s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097478s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097368s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098695s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096260s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098092s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097964s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099442s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097654s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097834s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096658s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097498s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097896s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097869s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.100100s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096283s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096619s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097709s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097475s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.099460s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096760s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098349s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098369s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097198s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098657s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098480s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097727s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096313s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098707s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096756s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.095920s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097616s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096852s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096798s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098578s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098307s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.097192s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096159s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.098208s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098391s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098054s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096659s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098346s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098370s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.096033s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098094s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096346s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097707s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103047s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.097882s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_module` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.097553s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.096453s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_test_env` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.098153s ]
+---------------------------------------------------------------
+[ 2018-08-10T10:51:48+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.woff [运行时间：0.030329s][吞吐率：32.97req/s] [内存消耗：1,322.06kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.woff',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T10:51:48+08:00 ] 127.0.0.1 GET /public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf
+[ info ] 127.0.0.1/public/static/plugins/bootstrap-table/fonts/glyphicons-halflings-regular.ttf [运行时间：0.031833s][吞吐率：31.41req/s] [内存消耗：1,322.08kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'plugins',
+    2 => 'bootstrap-table',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/public/static/plugins/bootstrap-table/css/bootstrap.min.css',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'glyphicons-halflings-regular.ttf',
+)
+[ info ] [ LOG ] INIT File

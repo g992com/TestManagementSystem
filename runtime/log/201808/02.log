@@ -1,0 +1,3461 @@
+---------------------------------------------------------------
+[ 2018-08-02T20:34:23+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.044195s][吞吐率：22.63req/s] [内存消耗：1,578.51kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:34:24+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.112105s][吞吐率：8.92req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001755s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.030721s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001166s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:35:08+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.044634s][吞吐率：22.40req/s] [内存消耗：1,743.09kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:35:10+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081372s][吞吐率：12.29req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002607s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.021916s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000952s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:39:36+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.049722s][吞吐率：20.11req/s] [内存消耗：1,743.54kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:39:36+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081624s][吞吐率：12.25req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001876s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020276s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000931s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:40:25+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.055455s][吞吐率：18.03req/s] [内存消耗：1,743.44kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:40:26+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.083109s][吞吐率：12.03req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001531s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.021116s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001038s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:40:38+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.036819s][吞吐率：27.16req/s] [内存消耗：1,743.43kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:40:39+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.079978s][吞吐率：12.50req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002475s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.023551s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001046s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:41:02+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.057370s][吞吐率：17.43req/s] [内存消耗：1,743.59kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:41:03+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.078567s][吞吐率：12.73req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020830s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000745s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:41:18+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.050822s][吞吐率：19.68req/s] [内存消耗：1,743.59kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:41:19+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.077674s][吞吐率：12.87req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001301s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022296s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000839s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:41:35+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.035543s][吞吐率：28.13req/s] [内存消耗：1,743.59kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:41:36+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.076172s][吞吐率：13.13req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001524s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022143s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:44:48+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.040229s][吞吐率：24.86req/s] [内存消耗：1,743.23kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:44:49+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.077210s][吞吐率：12.95req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002053s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.023662s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:44:56+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.097822s][吞吐率：10.22req/s] [内存消耗：2,654.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001808s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.033764s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.001659s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:44:56+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.106429s][吞吐率：9.40req/s] [内存消耗：2,651.05kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001235s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.040283s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000637s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:44:58+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.035134s][吞吐率：28.46req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:44:59+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.071055s][吞吐率：14.07req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001229s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020193s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:45:01+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.035695s][吞吐率：28.02req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:45:01+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.082161s][吞吐率：12.17req/s] [内存消耗：2,660.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001734s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.023604s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001124s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:45:19+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.089197s][吞吐率：11.21req/s] [内存消耗：2,651.05kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011605s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.029483s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.001254s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:45:19+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.085035s][吞吐率：11.76req/s] [内存消耗：2,654.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011372s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.025949s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000778s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:45:25+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.079706s][吞吐率：12.55req/s] [内存消耗：2,654.13kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003136s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.028646s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000817s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:46:25+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.054337s][吞吐率：18.40req/s] [内存消耗：1,743.15kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:46:26+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.113614s][吞吐率：8.80req/s] [内存消耗：2,660.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003690s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.047620s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001087s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:48:52+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.037306s][吞吐率：26.81req/s] [内存消耗：1,578.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:48:52+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.125589s][吞吐率：7.96req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001924s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022863s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:48:59+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.033891s][吞吐率：29.51req/s] [内存消耗：1,578.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:49:00+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.100789s][吞吐率：9.92req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002612s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.028715s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001118s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:49:43+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.038960s][吞吐率：25.67req/s] [内存消耗：1,578.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:49:43+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.077888s][吞吐率：12.84req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001392s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022246s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000783s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:49:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081402s][吞吐率：12.28req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-04-26',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001346s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.024510s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-04-26'  AND `status` = 1 [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:08+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.041347s][吞吐率：24.19req/s] [内存消耗：1,742.77kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:50:08+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.074085s][吞吐率：13.50req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001333s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022208s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000790s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:35+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081840s][吞吐率：12.22req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-24',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001519s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020971s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-24'  AND `status` = 1 [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:37+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.090673s][吞吐率：11.03req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-04-26',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001459s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.025248s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-04-26'  AND `status` = 1 [ RunTime:0.000963s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:39+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.041066s][吞吐率：24.35req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:50:39+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081894s][吞吐率：12.21req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001293s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022765s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000969s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.092831s][吞吐率：10.77req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001547s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.033545s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:50:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.086686s][吞吐率：11.54req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002031s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.025880s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000811s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:52:45+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.040081s][吞吐率：24.95req/s] [内存消耗：1,742.77kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:52:46+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.078890s][吞吐率：12.68req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001844s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.023011s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000933s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:52:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.086695s][吞吐率：11.53req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001429s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.028539s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:52:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.090285s][吞吐率：11.08req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002402s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.031413s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000902s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:19+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.1/ [运行时间：0.075078s][吞吐率：13.32req/s] [内存消耗：1,568.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:22+08:00 ] 127.0.0.1 POST /index.php/index/Login/verifyLogin
+[ info ] 127.0.0.1/index.php/index/Login/verifyLogin [运行时间：0.071251s][吞吐率：14.03req/s] [内存消耗：2,650.68kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'verifyLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'fjk',
+  'userPwd' => 'Zmpr',
+)
+[ info ] [ RUN ] app\index\controller\Login->verifyLogin[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001648s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.018294s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_user` WHERE  `user_name` = 'fjk'  AND `status` <> 0 LIMIT 1 [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:22+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.103093s][吞吐率：9.70req/s] [内存消耗：1,589.55kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:22+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.069883s][吞吐率：14.31req/s] [内存消耗：1,571.33kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:24+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.061081s][吞吐率：16.37req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:24+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081373s][吞吐率：12.29req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001318s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020654s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000750s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:25+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.083603s][吞吐率：11.96req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001117s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.034025s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000653s ]
+Time:0.000589s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:52+08:00 ] 127.0.0.1 GET /index.php/index/index
+[ info ] 127.0.0.1/index.php/index/index [运行时间：0.029118s][吞吐率：34.34req/s] [内存消耗：1,589.68kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\index.html [ array (
+  0 => 'realName',
+  1 => 'userId',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:53+08:00 ] 127.0.0.1 GET /index.php/index/index/update_log_page
+[ info ] 127.0.0.1/index.php/index/index/update_log_page [运行时间：0.048596s][吞吐率：20.58req/s] [内存消耗：1,571.33kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'update_log_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->update_log_page[ D:\phpStudy\TestManagementSystem\htdocs\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/index\view\index\update_log_page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:55+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.046714s][吞吐率：21.41req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:53:55+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.081109s][吞吐率：12.33req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001607s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.019227s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000937s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:56+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.076606s][吞吐率：13.05req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001338s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.026772s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:53:56+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.074934s][吞吐率：13.35req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001027s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.027449s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:55:33+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.101888s][吞吐率：9.81req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.046651s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000968s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:55:33+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.109005s][吞吐率：9.17req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011849s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.041166s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:16+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.033821s][吞吐率：29.57req/s] [内存消耗：1,742.85kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:57:16+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.080648s][吞吐率：12.40req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002325s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022559s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001034s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:17+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.033349s][吞吐率：29.99req/s] [内存消耗：1,578.38kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:57:18+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.082430s][吞吐率：12.13req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001248s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.024829s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000999s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:20+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.078128s][吞吐率：12.80req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001215s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.026426s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:20+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.074523s][吞吐率：13.42req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001241s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.027013s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:32+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.041587s][吞吐率：24.05req/s] [内存消耗：1,742.78kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:57:32+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.080232s][吞吐率：12.46req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001511s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020152s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000978s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:33+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.073043s][吞吐率：13.69req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001171s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.021250s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:33+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.084064s][吞吐率：11.90req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010766s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.021847s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:37+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskDate
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskDate [运行时间：0.068194s][吞吐率：14.66req/s] [内存消耗：2,651.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskDate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'taskId' => 'undefined',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskDate[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001294s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.017967s ]
+[ sql ] [ SQL ] SELECT `start_date`,`end_date` FROM `tms_test_plan` WHERE  `id` = 0 ORDER BY id desc [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:45+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.096934s][吞吐率：10.32req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003263s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.035867s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000835s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:57:45+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.097259s][吞吐率：10.28req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001867s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.037583s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:08+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.035337s][吞吐率：28.30req/s] [内存消耗：1,742.81kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:58:09+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.075366s][吞吐率：13.27req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001478s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.018398s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000941s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:09+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.057925s][吞吐率：17.26req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001212s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.016510s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:10+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.056930s][吞吐率：17.57req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001223s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.014325s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:16+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.038733s][吞吐率：25.82req/s] [内存消耗：1,578.41kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T20:58:16+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.078468s][吞吐率：12.74req/s] [内存消耗：2,660.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001483s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020539s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000954s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:17+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.073185s][吞吐率：13.66req/s] [内存消耗：2,651.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001030s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.028810s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2018-08-02T20:58:17+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.059127s][吞吐率：16.91req/s] [内存消耗：2,654.82kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=nmdjc87emk0qghio8ssjq0afj2; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.014081s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:02:46+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.038204s][吞吐率：26.18req/s] [内存消耗：1,578.44kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T21:02:47+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.084917s][吞吐率：11.78req/s] [内存消耗：2,660.88kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002373s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.020174s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.001092s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:02:57+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.078184s][吞吐率：12.79req/s] [内存消耗：2,651.72kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.021444s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:02:57+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.069476s][吞吐率：14.39req/s] [内存消耗：2,654.84kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001389s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.018459s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:02:58+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.043363s][吞吐率：23.06req/s] [内存消耗：1,578.44kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T21:02:58+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.077757s][吞吐率：12.86req/s] [内存消耗：2,657.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001379s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.021166s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000794s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:02:58+08:00 ] 127.0.0.1 GET /index.php/schedule/hr_schedule_management
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management [运行时间：0.038968s][吞吐率：25.66req/s] [内存消耗：1,578.44kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/index/index',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->index[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\TestManagementSystem\htdocs/application/schedule\view\hr_schedule_management\index.html [ array (
+  0 => 'realName',
+  1 => 'userID',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-02T21:02:59+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.082440s][吞吐率：12.13req/s] [内存消耗：2,657.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001468s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.021709s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.000942s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:03:00+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskList [运行时间：0.073544s][吞吐率：13.60req/s] [内存消耗：2,651.72kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001439s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.016738s ]
+[ sql ] [ SQL ] SELECT `id`,`test_plan_name` FROM `tms_test_plan` WHERE  `status` <> 0 ORDER BY id desc [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:03:00+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTesterList
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTesterList [运行时间：0.062095s][吞吐率：16.10req/s] [内存消耗：2,654.84kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTesterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTesterList[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001356s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_user` [ RunTime:0.017084s ]
+[ sql ] [ SQL ] SELECT `id`,`real_name` FROM `tms_user` WHERE  `status` <> 0  AND `role_id` = 1 ORDER BY real_name asc [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:03:03+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getTaskDate
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getTaskDate [运行时间：0.076064s][吞吐率：13.15req/s] [内存消耗：2,652.01kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getTaskDate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '8',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'taskId' => '6',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getTaskDate[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001275s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_test_plan` [ RunTime:0.022678s ]
+[ sql ] [ SQL ] SELECT `start_date`,`end_date` FROM `tms_test_plan` WHERE  `id` = 6 ORDER BY id desc [ RunTime:0.002542s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:03:08+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/addEvent
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/addEvent [运行时间：0.073212s][吞吐率：13.66req/s] [内存消耗：2,666.05kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'addEvent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '179',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'planId' => '6',
+  'taskName' => '211212',
+  'creatorName' => '方建康',
+  'creatorId' => '1',
+  'startDate' => '2018-08-02',
+  'endDate' => '2018-08-10',
+  'color' => '#00821A',
+  'selectTester' => 
+  array (
+    0 => '吴玉枝',
+  ),
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->addEvent[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001270s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.017203s ]
+[ sql ] [ SQL ] INSERT INTO `tms_schedule` (`test_plan_id` , `title` , `start_time` , `end_time` , `color` , `creator_id` , `creator_name` , `create_date` , `status` , `runner`) VALUES (6 , '【吴玉枝】211212' , '2018-08-02' , '2018-08-10' , '#00821A' , 1 , '方建康' , '2018-08-02 21:03:08' , 1 , '吴玉枝') [ RunTime:0.000675s ]
+---------------------------------------------------------------
+[ 2018-08-02T21:03:08+08:00 ] 127.0.0.1 POST /index.php/schedule/hr_schedule_management/getScheduleData
+[ info ] 127.0.0.1/index.php/schedule/hr_schedule_management/getScheduleData [运行时间：0.093710s][吞吐率：10.67req/s] [内存消耗：2,658.10kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\TestManagementSystem\htdocs\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'schedule',
+    1 => 'hr_schedule_management',
+    2 => 'getScheduleData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index.php/schedule/hr_schedule_management',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '16',
+  'cookie' => 'PHPSESSID=fjja9ictp0q25rvc6falnpv293; userName=null; rememberUser=null',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'start' => '2018-05-31',
+)
+[ info ] [ RUN ] app\schedule\controller\HrScheduleManagement->getScheduleData[ D:\phpStudy\TestManagementSystem\htdocs\application\schedule\controller\HrScheduleManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001108s ] mysql:host=127.0.0.1;dbname=tms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tms_schedule` [ RunTime:0.022838s ]
+[ sql ] [ SQL ] SELECT * FROM `tms_schedule` WHERE  `start_time` >= '2018-05-31'  AND `status` = 1 [ RunTime:0.003251s ]

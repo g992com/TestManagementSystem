@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>操作演示&Bootstrap样式</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+   
+        <link rel="stylesheet" href="../examples/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../src/mmGrid.css">
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body style="padding: 40px;">
+        <main>
+            <div style="margin-bottom: 5px;">
+                <input id="urlAddress" placeholder="输入URL请求链接，返回Json字符串。" style="margin-left: 20px; width:600px"> <button id="btnSearch" class="btn" >请求并解析</button>
+            </div>
+            <table id="mmg" class="mmg">
+                <tr>
+                    <th rowspan="" colspan=""></th>
+                </tr>
+            </table>
+            <div id="pg" style="text-align: right;"></div>
+        </main>
+
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="../src/mmGrid.js"></script>
+        <script>
+		
+		
+		var highliht = function(val){
+			if(val > 0){
+				return '<span style="color: #b00"><h5>' +val + '</h5></span>';
+			}else {
+				return '<span style="color: #0b0">' + val + '</span>';
+			}
+		};
+	
+		var address1 = "http://10.182.8.204/sendpay/decodesendpay?sendpayString=000100000010000000";
+		
+		
+		
+		
+		
+		
+            
+				
+			
+				var str = '[{"id":1,"sid":1,"value":0,"description":"普通"},{"id":5,"sid":2,"value":0,"description":"非ECLP"},{"id":7,"sid":3,"value":1,"description":"非自提"},{"id":8,"sid":4,"value":1,"description":"跨境"},{"id":11,"sid":5,"value":0,"description":"非合约机"},{"id":0,"sid":6,"value":0,"description":"未使用"},{"id":0,"sid":7,"value":0,"description":"未使用"},{"id":0,"sid":8,"value":0,"description":"未使用"},{"id":0,"sid":9,"value":0,"description":"未使用"},{"id":0,"sid":10,"value":0,"description":"未使用"},{"id":0,"sid":11,"value":0,"description":"未使用"},{"id":0,"sid":12,"value":0,"description":"未使用"},{"id":0,"sid":13,"value":0,"description":"未使用"},{"id":17,"sid":14,"value":0,"description":"拼团未成团"},{"id":19,"sid":15,"value":0,"description":"需要经过转移Worker"},{"id":0,"sid":16,"value":0,"description":"未使用"},{"id":0,"sid":17,"value":0,"description":"未使用"},{"id":0,"sid":18,"value":0,"description":"未使用"},{"id":0,"sid":19,"value":0,"description":"未使用"},{"id":0,"sid":20,"value":0,"description":"未使用"},{"id":0,"sid":21,"value":0,"description":"未使用"},{"id":0,"sid":22,"value":0,"description":"未使用"},{"id":0,"sid":23,"value":0,"description":"未使用"},{"id":0,"sid":24,"value":0,"description":"未使用"},{"id":0,"sid":25,"value":0,"description":"未使用"},{"id":0,"sid":26,"value":0,"description":"未使用"},{"id":0,"sid":27,"value":0,"description":"未使用"},{"id":0,"sid":28,"value":0,"description":"未使用"},{"id":0,"sid":29,"value":0,"description":"未使用"},{"id":0,"sid":30,"value":0,"description":"未使用"},{"id":0,"sid":31,"value":0,"description":"未使用"},{"id":0,"sid":32,"value":0,"description":"未使用"},{"id":0,"sid":33,"value":0,"description":"未使用"},{"id":0,"sid":34,"value":0,"description":"未使用"},{"id":0,"sid":35,"value":0,"description":"未使用"},{"id":0,"sid":36,"value":0,"description":"未使用"},{"id":0,"sid":37,"value":0,"description":"未使用"},{"id":0,"sid":38,"value":0,"description":"未使用"},{"id":0,"sid":39,"value":0,"description":"未使用"},{"id":0,"sid":40,"value":0,"description":"未使用"},{"id":0,"sid":41,"value":0,"description":"未使用"},{"id":0,"sid":42,"value":0,"description":"未使用"},{"id":0,"sid":43,"value":0,"description":"未使用"},{"id":0,"sid":44,"value":0,"description":"未使用"},{"id":0,"sid":45,"value":0,"description":"未使用"},{"id":0,"sid":46,"value":0,"description":"未使用"},{"id":0,"sid":47,"value":0,"description":"未使用"},{"id":0,"sid":48,"value":0,"description":"未使用"},{"id":0,"sid":49,"value":0,"description":"未使用"},{"id":0,"sid":50,"value":0,"description":"未使用"},{"id":0,"sid":51,"value":0,"description":"未使用"},{"id":0,"sid":52,"value":0,"description":"未使用"},{"id":0,"sid":53,"value":0,"description":"未使用"},{"id":0,"sid":54,"value":0,"description":"未使用"},{"id":0,"sid":55,"value":0,"description":"未使用"},{"id":0,"sid":56,"value":0,"description":"未使用"},{"id":0,"sid":57,"value":0,"description":"未使用"},{"id":0,"sid":58,"value":0,"description":"未使用"},{"id":0,"sid":59,"value":0,"description":"未使用"},{"id":0,"sid":60,"value":0,"description":"未使用"},{"id":0,"sid":61,"value":0,"description":"未使用"},{"id":0,"sid":62,"value":0,"description":"未使用"},{"id":0,"sid":63,"value":0,"description":"未使用"},{"id":0,"sid":64,"value":0,"description":"未使用"},{"id":0,"sid":65,"value":0,"description":"未使用"},{"id":0,"sid":66,"value":0,"description":"未使用"},{"id":0,"sid":67,"value":0,"description":"未使用"},{"id":0,"sid":68,"value":0,"description":"未使用"},{"id":0,"sid":69,"value":0,"description":"未使用"},{"id":0,"sid":70,"value":0,"description":"未使用"},{"id":0,"sid":71,"value":0,"description":"未使用"},{"id":0,"sid":72,"value":0,"description":"未使用"},{"id":0,"sid":73,"value":0,"description":"未使用"},{"id":0,"sid":74,"value":0,"description":"未使用"},{"id":0,"sid":75,"value":0,"description":"未使用"},{"id":0,"sid":76,"value":0,"description":"未使用"},{"id":0,"sid":77,"value":0,"description":"未使用"},{"id":0,"sid":78,"value":0,"description":"未使用"},{"id":0,"sid":79,"value":0,"description":"未使用"},{"id":0,"sid":80,"value":0,"description":"未使用"},{"id":0,"sid":81,"value":0,"description":"未使用"},{"id":0,"sid":82,"value":0,"description":"未使用"},{"id":0,"sid":83,"value":0,"description":"未使用"},{"id":0,"sid":84,"value":0,"description":"未使用"},{"id":0,"sid":85,"value":0,"description":"未使用"},{"id":0,"sid":86,"value":0,"description":"未使用"},{"id":0,"sid":87,"value":0,"description":"未使用"},{"id":0,"sid":88,"value":0,"description":"未使用"},{"id":0,"sid":89,"value":0,"description":"未使用"},{"id":0,"sid":90,"value":0,"description":"未使用"},{"id":0,"sid":91,"value":0,"description":"未使用"},{"id":0,"sid":92,"value":0,"description":"未使用"},{"id":0,"sid":93,"value":1,"description":"未使用"},{"id":0,"sid":94,"value":0,"description":"未使用"},{"id":0,"sid":95,"value":0,"description":"未使用"},{"id":0,"sid":96,"value":0,"description":"未使用"},{"id":0,"sid":97,"value":0,"description":"未使用"},{"id":0,"sid":98,"value":0,"description":"未使用"},{"id":0,"sid":99,"value":0,"description":"未使用"},{"id":0,"sid":100,"value":0,"description":"未使用"},{"id":0,"sid":101,"value":0,"description":"未使用"},{"id":0,"sid":102,"value":0,"description":"未使用"},{"id":0,"sid":103,"value":0,"description":"未使用"},{"id":0,"sid":104,"value":0,"description":"未使用"},{"id":0,"sid":105,"value":0,"description":"未使用"},{"id":0,"sid":106,"value":0,"description":"未使用"},{"id":0,"sid":107,"value":0,"description":"未使用"},{"id":0,"sid":108,"value":0,"description":"未使用"},{"id":0,"sid":109,"value":0,"description":"未使用"},{"id":0,"sid":110,"value":0,"description":"未使用"},{"id":0,"sid":111,"value":0,"description":"未使用"},{"id":0,"sid":112,"value":0,"description":"未使用"},{"id":0,"sid":113,"value":0,"description":"未使用"},{"id":0,"sid":114,"value":0,"description":"未使用"},{"id":0,"sid":115,"value":0,"description":"未使用"},{"id":0,"sid":116,"value":0,"description":"未使用"},{"id":0,"sid":117,"value":0,"description":"未使用"},{"id":0,"sid":118,"value":0,"description":"未使用"},{"id":0,"sid":119,"value":0,"description":"未使用"},{"id":0,"sid":120,"value":0,"description":"未使用"},{"id":0,"sid":121,"value":0,"description":"未使用"},{"id":0,"sid":122,"value":0,"description":"未使用"},{"id":0,"sid":123,"value":0,"description":"未使用"},{"id":0,"sid":124,"value":0,"description":"未使用"},{"id":0,"sid":125,"value":0,"description":"未使用"},{"id":0,"sid":126,"value":0,"description":"未使用"},{"id":0,"sid":127,"value":0,"description":"未使用"},{"id":0,"sid":128,"value":0,"description":"未使用"},{"id":0,"sid":129,"value":0,"description":"未使用"},{"id":0,"sid":130,"value":0,"description":"未使用"},{"id":0,"sid":131,"value":0,"description":"未使用"},{"id":0,"sid":132,"value":0,"description":"未使用"},{"id":0,"sid":133,"value":0,"description":"未使用"},{"id":0,"sid":134,"value":0,"description":"未使用"},{"id":0,"sid":135,"value":0,"description":"未使用"},{"id":0,"sid":136,"value":0,"description":"未使用"},{"id":0,"sid":137,"value":0,"description":"未使用"},{"id":0,"sid":138,"value":0,"description":"未使用"},{"id":0,"sid":139,"value":0,"description":"未使用"},{"id":0,"sid":140,"value":0,"description":"未使用"},{"id":0,"sid":141,"value":0,"description":"未使用"},{"id":0,"sid":142,"value":0,"description":"未使用"},{"id":0,"sid":143,"value":0,"description":"未使用"},{"id":0,"sid":144,"value":0,"description":"未使用"},{"id":0,"sid":145,"value":0,"description":"未使用"},{"id":0,"sid":146,"value":0,"description":"未使用"},{"id":0,"sid":147,"value":0,"description":"未使用"},{"id":0,"sid":148,"value":0,"description":"未使用"},{"id":0,"sid":149,"value":0,"description":"未使用"},{"id":0,"sid":150,"value":0,"description":"未使用"},{"id":0,"sid":151,"value":0,"description":"未使用"},{"id":0,"sid":152,"value":0,"description":"未使用"},{"id":0,"sid":153,"value":0,"description":"未使用"},{"id":0,"sid":154,"value":0,"description":"未使用"},{"id":0,"sid":155,"value":0,"description":"未使用"},{"id":0,"sid":156,"value":0,"description":"未使用"},{"id":0,"sid":157,"value":0,"description":"未使用"},{"id":0,"sid":158,"value":0,"description":"未使用"},{"id":0,"sid":159,"value":0,"description":"未使用"},{"id":0,"sid":160,"value":0,"description":"未使用"},{"id":0,"sid":161,"value":0,"description":"未使用"},{"id":0,"sid":162,"value":0,"description":"未使用"},{"id":0,"sid":163,"value":0,"description":"未使用"},{"id":0,"sid":164,"value":0,"description":"未使用"},{"id":0,"sid":165,"value":0,"description":"未使用"},{"id":0,"sid":166,"value":0,"description":"未使用"},{"id":0,"sid":167,"value":0,"description":"未使用"},{"id":0,"sid":168,"value":0,"description":"未使用"},{"id":0,"sid":169,"value":0,"description":"未使用"},{"id":0,"sid":170,"value":0,"description":"未使用"},{"id":0,"sid":171,"value":0,"description":"未使用"},{"id":0,"sid":172,"value":0,"description":"未使用"},{"id":0,"sid":173,"value":0,"description":"未使用"},{"id":0,"sid":174,"value":0,"description":"未使用"},{"id":0,"sid":175,"value":0,"description":"未使用"},{"id":0,"sid":176,"value":0,"description":"未使用"},{"id":0,"sid":177,"value":0,"description":"未使用"},{"id":0,"sid":178,"value":0,"description":"未使用"},{"id":0,"sid":179,"value":0,"description":"未使用"},{"id":0,"sid":180,"value":0,"description":"未使用"},{"id":0,"sid":181,"value":0,"description":"未使用"},{"id":0,"sid":182,"value":0,"description":"未使用"},{"id":0,"sid":183,"value":0,"description":"未使用"},{"id":0,"sid":184,"value":0,"description":"未使用"},{"id":0,"sid":185,"value":0,"description":"未使用"},{"id":0,"sid":186,"value":0,"description":"未使用"},{"id":0,"sid":187,"value":0,"description":"未使用"},{"id":0,"sid":188,"value":0,"description":"未使用"},{"id":0,"sid":189,"value":0,"description":"未使用"},{"id":0,"sid":190,"value":0,"description":"未使用"},{"id":0,"sid":191,"value":0,"description":"未使用"},{"id":0,"sid":192,"value":0,"description":"未使用"},{"id":0,"sid":193,"value":0,"description":"未使用"},{"id":0,"sid":194,"value":0,"description":"未使用"},{"id":0,"sid":195,"value":0,"description":"未使用"},{"id":0,"sid":196,"value":0,"description":"未使用"},{"id":0,"sid":197,"value":0,"description":"未使用"},{"id":0,"sid":198,"value":0,"description":"未使用"},{"id":0,"sid":199,"value":0,"description":"未使用"},{"id":0,"sid":200,"value":0,"description":"未使用"}]';
+	
+                var items =  eval("("+str+")"); 
+
+                var cols = [
+                    { title:'sid', name:'sid' ,width:30, align:'center' },
+					{ title:'值', name:'value' ,width:50, align:'center',renderer: highliht },
+					{ title:'描述', name:'description',width:600,align:'left' }
+                ];
+
+
+                var mmg = $('.mmg').mmGrid({
+                    height: 800
+                    , cols: cols
+                    , method: 'get'
+                    , remoteSort:true
+                    , items: items
+                   // , multiSelect: true
+                   // , fullWidthRows: true
+                });
+                mmg.load();
+           
+        </script>
+    </body>
+</html>
